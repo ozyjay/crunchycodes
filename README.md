@@ -1,6 +1,7 @@
 # Crunchy Codes website
 
-Static GitHub Pages website for `crunchycodes.net`.
+Static GitHub Pages website for `crunchycodes.net`, a personal maker site for
+Crunchy Codes projects, notes, experiments, and developer tools.
 
 ## Publish with GitHub Pages
 
@@ -13,7 +14,9 @@ Static GitHub Pages website for `crunchycodes.net`.
 
 ## Before launch
 
-- Replace the placeholder extension card in `index.html`.
-- Add Marketplace and GitHub repository links when extensions are published.
+- Replace placeholder project, note, and tool text in `index.html` as work is
+  published.
+- Add project, repository, documentation, or marketplace links when they are
+  available.
 - Add your preferred contact details to `support.html` and `privacy.html`.
 - Keep `CNAME` in the repository root so GitHub Pages retains the custom domain.

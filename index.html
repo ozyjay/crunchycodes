@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crunchy Codes | VS Code Extensions</title>
+    <title>Crunchy Codes | Projects, Notes, and Tools</title>
     <meta
       name="description"
-      content="Crunchy Codes creates focused VS Code extensions for developers who want practical, reliable tools."
+      content="Crunchy Codes is a small personal workshop for software projects, notes, experiments, and practical developer tools."
     />
     <link rel="canonical" href="https://crunchycodes.net/" />
     <link rel="stylesheet" href="styles.css" />
@@ -18,9 +18,10 @@
         <span>Crunchy Codes</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#extensions">Extensions</a>
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#tools">Tools</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -28,64 +29,84 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">VS Code extensions</p>
-          <h1>Small tools for sharper coding sessions.</h1>
+          <p class="eyebrow">Projects, notes, and tools</p>
+          <h1>Things I make while chasing useful ideas.</h1>
           <p>
-            Crunchy Codes builds practical Visual Studio Code extensions with a
-            focus on clean workflows, predictable behavior, and helpful support.
+            Crunchy Codes is my small workshop for software projects,
+            experiments, writing, and practical developer tools. Some ideas
+            become polished utilities; others stay as notes from the workbench.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#extensions">View extensions</a>
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#notes">Read notes</a>
             <a class="button secondary" href="support.html">Get support</a>
           </div>
         </div>
 
-        <div class="preview" aria-label="Illustration of a code editor">
-          <div class="preview-toolbar">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="workbench" aria-label="Illustration of a project workbench">
+          <div class="workbench-header">
+            <span class="pill">idea</span>
+            <span class="pill">build</span>
+            <span class="pill">ship</span>
           </div>
-          <div class="preview-body">
-            <div class="line short"></div>
-            <div class="line"></div>
-            <div class="line medium"></div>
-            <div class="line accent"></div>
-            <div class="line medium"></div>
-            <div class="line short"></div>
+          <div class="workbench-grid">
+            <div class="tile large">
+              <span>Project</span>
+              <strong>Useful software</strong>
+            </div>
+            <div class="tile">
+              <span>Note</span>
+              <strong>What I learned</strong>
+            </div>
+            <div class="tile">
+              <span>Tool</span>
+              <strong>Sharper workflows</strong>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="extensions">
+      <section class="section" id="projects">
         <div class="section-heading">
-          <p class="eyebrow">Marketplace</p>
-          <h2>Extensions</h2>
+          <p class="eyebrow">Projects</p>
+          <h2>A home for the things I am building.</h2>
           <p>
-            Published extensions will appear here with links to the Visual Studio
-            Marketplace, GitHub source, documentation, and issue tracking.
+            This space can hold finished tools, early experiments, open source
+            work, and small utilities that are useful enough to share.
           </p>
         </div>
 
-        <div class="extension-grid">
-          <article class="extension-card">
-            <p class="status">Coming soon</p>
-            <h3>First extension</h3>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <p class="status">Workshop</p>
+            <h3>Software projects</h3>
             <p>
-              A focused developer utility for VS Code. Replace this card once
-              the extension is published.
+              Small applications, utilities, and experiments that turn rough
+              ideas into something people can try.
             </p>
             <div class="card-links">
-              <span>Marketplace link pending</span>
-              <span>Repository link pending</span>
+              <span>Project links coming soon</span>
+              <span>Source links when public</span>
             </div>
           </article>
-          <article class="extension-card">
-            <p class="status">Support ready</p>
-            <h3>Issue tracking</h3>
+          <article class="feature-card" id="notes">
+            <p class="status">Notes</p>
+            <h3>Working notes</h3>
             <p>
-              Extension support will be handled through GitHub Issues or direct
-              email, depending on the project.
+              Short write-ups about technical decisions, lessons learned, and
+              the useful bits that fall out of building in public.
+            </p>
+            <div class="card-links">
+              <span>Writing area planned</span>
+              <span>No feed required yet</span>
+            </div>
+          </article>
+          <article class="feature-card" id="tools">
+            <p class="status">Tools</p>
+            <h3>Developer utilities</h3>
+            <p>
+              Practical workflow helpers, including future editor extensions,
+              scripts, and focused tools for everyday development.
             </p>
             <div class="card-links">
               <a href="support.html">Support policy</a>
@@ -98,10 +119,11 @@
       <section class="band" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Questions, bugs, and extension support</h2>
+          <h2>Questions, bugs, and project support</h2>
           <p>
-            For extension support, feature requests, or security concerns, use
-            the support page or the issue tracker linked from each extension.
+            For project support, feature ideas, bug reports, or security
+            concerns, use the support page or the issue tracker linked from the
+            relevant project.
           </p>
         </div>
         <a class="button primary" href="support.html">Open support</a>
