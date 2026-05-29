@@ -123,10 +123,10 @@ p {
 }
 
 h1 {
-  max-width: 10ch;
+  max-width: 12ch;
   margin-bottom: 22px;
-  font-size: clamp(3rem, 8vw, 6.7rem);
-  line-height: 0.94;
+  font-size: clamp(3rem, 6.2vw, 5.8rem);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -190,6 +190,7 @@ h3 {
 
 .workbench {
   width: min(100%, 620px);
+  min-width: 0;
   margin-left: auto;
   overflow: hidden;
   border: 1px solid rgba(29, 37, 37, 0.12);
@@ -228,6 +229,7 @@ h3 {
 }
 
 .tile {
+  min-width: 0;
   min-height: 150px;
   display: flex;
   flex-direction: column;
@@ -256,8 +258,9 @@ h3 {
 .tile strong {
   max-width: 11ch;
   color: var(--ink);
-  font-size: clamp(1.45rem, 3vw, 2.25rem);
-  line-height: 1.04;
+  font-size: clamp(1.35rem, 2.25vw, 2rem);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
 }
 
 .section {
@@ -283,8 +286,32 @@ h3 {
   background: var(--surface);
 }
 
+.feature-card.featured {
+  grid-column: span 2;
+  background: #f8fbf7;
+}
+
 .feature-card p {
   max-width: 58ch;
+}
+
+.meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.meta-list span {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
 }
 
 .card-links {
@@ -353,6 +380,10 @@ h3 {
   .hero,
   .feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-card.featured {
+    grid-column: auto;
   }
 
   .hero {
