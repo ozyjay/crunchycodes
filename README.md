@@ -32,7 +32,7 @@ The homepage currently features recent public Crunchy Codes repositories:
 When releasing a new project version, check:
 
 - Any version badges or status labels in `index.html`.
-- The GitHub and issue tracker links in `index.html`.
+- The Marketplace, GitHub, and issue tracker links in `index.html`.
 - The support details in `support.html`.
 - The privacy summary in `privacy.html` when privacy claims change.
 
@@ -63,6 +63,6 @@ to confirm layout and links.
 ## Before launch
 
 - Add new public projects as more work is published.
-- Add documentation, demo, release, or marketplace links when available.
+- Keep documentation, demo, release, and marketplace links current.
 - Add your preferred contact details to `support.html` and `privacy.html`.
 - Keep `CNAME` in the repository root so GitHub Pages retains the custom domain.
