@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crunchy Codes | Projects, Notes, and Tools</title>
+    <title>Crunchy Codes | Local-First Tools and Experiments</title>
     <meta
       name="description"
-      content="Crunchy Codes is a small personal workshop for software projects, notes, experiments, and practical developer tools."
+      content="Crunchy Codes is a small public workshop for local-first software tools, AI experiments, and practical developer utilities."
     />
     <link rel="canonical" href="https://crunchycodes.net/" />
     <link rel="stylesheet" href="styles.css" />
@@ -19,7 +19,7 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#projects">Projects</a>
-        <a href="#notes">Notes</a>
+        <a href="#local-tools">Local tools</a>
         <a href="#tools">Tools</a>
         <a href="support.html">Support</a>
         <a href="#contact">Contact</a>
@@ -29,16 +29,16 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Projects, notes, and tools</p>
-          <h1>Things I make while chasing useful ideas.</h1>
+          <p class="eyebrow">Local-first tools and experiments</p>
+          <h1>Public work from the bench.</h1>
           <p>
-            Crunchy Codes is my small workshop for software projects,
-            experiments, writing, and practical developer tools. Some ideas
-            become polished utilities; others stay as notes from the workbench.
+            Crunchy Codes is my public workshop for local-first software,
+            AI-assisted utilities, and small experiments that make development
+            workflows a little more useful.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View projects</a>
-            <a class="button secondary" href="#notes">Read notes</a>
+            <a class="button secondary" href="#local-tools">Local tools</a>
             <a class="button secondary" href="support.html">Get support</a>
           </div>
         </div>
@@ -51,16 +51,16 @@
           </div>
           <div class="workbench-grid">
             <div class="tile large">
-              <span>Project</span>
-              <strong>Useful software</strong>
+              <span>Public</span>
+              <strong>Local tools</strong>
             </div>
             <div class="tile">
-              <span>Note</span>
-              <strong>What I learned</strong>
+              <span>AI</span>
+              <strong>Model work</strong>
             </div>
             <div class="tile">
-              <span>Tool</span>
-              <strong>Sharper workflows</strong>
+              <span>Demo</span>
+              <strong>Experiments</strong>
             </div>
           </div>
         </div>
@@ -69,10 +69,11 @@
       <section class="section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
-          <h2>A home for the things I am building.</h2>
+          <h2>Recent public projects.</h2>
           <p>
-            This space can hold finished tools, early experiments, open source
-            work, and small utilities that are useful enough to share.
+            These are the current public repositories I have been working on:
+            local Codex usage meters, Ollama model download tooling, desktop AI
+            experiments, and a voice effects demo.
           </p>
         </div>
 
@@ -81,9 +82,10 @@
             <p class="status">VS Code extension</p>
             <h3>Codex Local Meter</h3>
             <p>
-              A local-only status bar meter for Codex CLI usage. It reads Codex
-              session files from your machine, estimates recent activity, and
-              keeps prompts, responses, and session data private.
+              A local-only VS Code status bar meter for Codex CLI usage. It
+              reads Codex session files from your machine, estimates recent
+              activity, and keeps prompts, responses, code, and tool output off
+              the network.
             </p>
             <div class="meta-list" aria-label="Codex Local Meter highlights">
               <span>Version 0.2.3</span>
@@ -96,40 +98,68 @@
               <a href="privacy.html">Privacy notes</a>
             </div>
           </article>
-          <article class="feature-card">
-            <p class="status">Workshop</p>
-            <h3>Software projects</h3>
+          <article class="feature-card" id="local-tools">
+            <p class="status">macOS menu bar app</p>
+            <h3>Codex Local Meter App</h3>
             <p>
-              Small applications, utilities, and experiments that turn rough
-              ideas into something people can try.
+              A native macOS menu bar companion for Codex Local Meter. It reads
+              the same local Codex session files under <code>~/.codex</code>
+              and displays privacy-safe usage metadata without telemetry.
             </p>
+            <div class="meta-list" aria-label="Codex Local Meter App highlights">
+              <span>Swift</span>
+              <span>Menu bar utility</span>
+              <span>Local-only</span>
+            </div>
             <div class="card-links">
-              <span>Project links coming soon</span>
-              <span>Source links when public</span>
+              <a href="https://github.com/ozyjay/CodexLocalMeterApp">GitHub</a>
+              <a href="https://github.com/ozyjay/CodexLocalMeterApp/issues">Issues</a>
             </div>
           </article>
-          <article class="feature-card" id="notes">
-            <p class="status">Notes</p>
-            <h3>Working notes</h3>
+          <article class="feature-card featured">
+            <p class="status">CLI / web / macOS app</p>
+            <h3>Ollama Manual Pull</h3>
             <p>
-              Short write-ups about technical decisions, lessons learned, and
-              the useful bits that fall out of building in public.
+              A practical downloader for Ollama models when <code>ollama pull</code>
+              fails partway through. It supports resumable direct downloads,
+              SHA-256 verification, a local browser UI, and a native macOS app
+              wrapper.
             </p>
+            <div class="meta-list" aria-label="Ollama Manual Pull highlights">
+              <span>Python</span>
+              <span>Resumable downloads</span>
+              <span>Verified blobs</span>
+            </div>
             <div class="card-links">
-              <span>Writing area planned</span>
-              <span>No feed required yet</span>
+              <a href="https://github.com/ozyjay/ollama-manual-pull">GitHub</a>
+              <a href="https://github.com/ozyjay/ollama-manual-pull/issues">Issues</a>
             </div>
           </article>
           <article class="feature-card" id="tools">
-            <p class="status">Tools</p>
-            <h3>Developer utilities</h3>
+            <p class="status">Desktop AI app</p>
+            <h3>ThoughtBench</h3>
             <p>
-              Practical workflow helpers, including future editor extensions,
-              scripts, and focused tools for everyday development.
+              A Tk desktop chat app for running local thinking-capable Gemma
+              and Qwen models, with behaviour profiles, restored conversations,
+              transcripts, diagnostics, and macOS-focused setup scripts.
             </p>
             <div class="card-links">
-              <a href="support.html">Support policy</a>
-              <a href="privacy.html">Privacy policy</a>
+              <a href="https://github.com/ozyjay/ThoughtBench">GitHub</a>
+              <a href="https://github.com/ozyjay/ThoughtBench/issues">Issues</a>
+            </div>
+          </article>
+          <article class="feature-card">
+            <p class="status">Early demo</p>
+            <h3>VoiceChanger</h3>
+            <p>
+              An early PySide6 Open Day demo for recording, transforming,
+              playing, and eventually visualising voice audio. Current work
+              covers the GUI shell, microphone recording, playback, and initial
+              placeholder effects.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/VoiceChanger">GitHub</a>
+              <a href="https://github.com/ozyjay/VoiceChanger/issues">Issues</a>
             </div>
           </article>
         </div>

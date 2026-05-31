@@ -5,8 +5,8 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 
 ## Site structure
 
-- `index.html` is the homepage, with sections for projects, notes, tools, and
-  contact.
+- `index.html` is the homepage, with sections for recent public projects, local
+  tools, project support, and contact.
 - `support.html` explains how to report bugs, request features, and share
   security concerns for Crunchy Codes projects.
 - `privacy.html` describes the default privacy posture for Crunchy Codes
@@ -16,17 +16,25 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 - `404.html`, `robots.txt`, `sitemap.xml`, and `CNAME` support GitHub Pages and
   the custom domain.
 
-## Featured project
+## Featured projects
 
-The homepage currently features **Codex Local Meter**, a VS Code extension that
-shows local-only Codex CLI usage estimates from `~/.codex` session files.
+The homepage currently features recent public Crunchy Codes repositories:
 
-When releasing a new Codex Local Meter version, check:
+- **Codex Local Meter**, a VS Code extension that shows local-only Codex CLI
+  usage estimates from `~/.codex` session files.
+- **Codex Local Meter App**, a native macOS menu bar companion for the VS Code
+  extension.
+- **ollama-manual-pull**, a CLI, web UI, and macOS app for manually downloading
+  and registering Ollama models.
+- **ThoughtBench**, a local desktop chat app for Gemma and Qwen models.
+- **VoiceChanger**, an early Open Day voice effects demo.
 
-- The version badge in `index.html`.
+When releasing a new project version, check:
+
+- Any version badges or status labels in `index.html`.
 - The GitHub and issue tracker links in `index.html`.
 - The support details in `support.html`.
-- The privacy summary in `privacy.html`.
+- The privacy summary in `privacy.html` when privacy claims change.
 
 ## Publish with GitHub Pages
 
@@ -54,7 +62,7 @@ to confirm layout and links.
 
 ## Before launch
 
-- Replace placeholder project, note, and tool text as more work is published.
-- Add project, repository, documentation, or marketplace links when available.
+- Add new public projects as more work is published.
+- Add documentation, demo, release, or marketplace links when available.
 - Add your preferred contact details to `support.html` and `privacy.html`.
 - Keep `CNAME` in the repository root so GitHub Pages retains the custom domain.
