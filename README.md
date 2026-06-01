@@ -26,6 +26,8 @@ The homepage currently features recent public Crunchy Codes repositories:
   extension.
 - **ollama-manual-pull**, a CLI, web UI, and macOS app for manually downloading
   and registering Ollama models.
+- **ReadLanes**, a no-API Mac prototype for reading long ChatGPT conversations
+  with stable reading lanes and anchored follow-ups.
 - **ThoughtBench**, a local desktop chat app for Gemma and Qwen models.
 - **VoiceChanger**, an early Open Day voice effects demo.
 

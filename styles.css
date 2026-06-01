@@ -267,9 +267,86 @@ h3 {
   padding: clamp(58px, 8vw, 108px) clamp(20px, 5vw, 72px);
 }
 
+.now-building {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(22px, 4vw, 48px);
+  align-items: start;
+  margin: 0 clamp(20px, 5vw, 72px);
+  padding: clamp(26px, 5vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.now-building h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.75rem, 3vw, 2.65rem);
+}
+
+.activity-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.activity-list li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 14px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.activity-list li:last-child {
+  border-bottom: 0;
+}
+
+.activity-list time {
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.activity-list span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 30px;
+}
+
+.lane-grid,
+.principle-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lane-grid {
+  margin-bottom: 18px;
+}
+
+.lane-card,
+.principle-list article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.lane-card {
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.lane-card p,
+.principle-list p {
+  color: var(--muted);
 }
 
 .feature-grid {
@@ -322,6 +399,15 @@ h3 {
 
 .card-links span {
   color: var(--muted);
+}
+
+.principles {
+  padding: 0 clamp(20px, 5vw, 72px) clamp(58px, 8vw, 108px);
+}
+
+.principle-list article {
+  padding: clamp(20px, 3vw, 30px);
+  background: #f8fbf7;
 }
 
 .band {
@@ -378,6 +464,9 @@ h3 {
   }
 
   .hero,
+  .now-building,
+  .lane-grid,
+  .principle-list,
   .feature-grid {
     grid-template-columns: 1fr;
   }
@@ -406,6 +495,11 @@ h3 {
 
   nav {
     justify-content: flex-start;
+  }
+
+  .activity-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .workbench-grid {

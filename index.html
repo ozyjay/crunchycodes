@@ -19,6 +19,7 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#projects">Projects</a>
+        <a href="#now-building">Now building</a>
         <a href="#local-tools">Local tools</a>
         <a href="#tools">Tools</a>
         <a href="support.html">Support</a>
@@ -38,6 +39,7 @@
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#now-building">Now building</a>
             <a class="button secondary" href="#local-tools">Local tools</a>
             <a class="button secondary" href="support.html">Get support</a>
           </div>
@@ -66,20 +68,67 @@
         </div>
       </section>
 
+      <section class="now-building" id="now-building" aria-label="Current public work">
+        <div>
+          <p class="eyebrow">Now building</p>
+          <h2>Recent workbench notes.</h2>
+        </div>
+        <ol class="activity-list">
+          <li>
+            <time datetime="2026-06-01">Jun 1</time>
+            <span>Codex Local Meter App menu bar updates</span>
+          </li>
+          <li>
+            <time datetime="2026-05-31">May 31</time>
+            <span>ReadLanes prototype and homepage refresh</span>
+          </li>
+          <li>
+            <time datetime="2026-05-30">May 30</time>
+            <span>Ollama Manual Pull, VoiceChanger, and local app packaging</span>
+          </li>
+        </ol>
+      </section>
+
       <section class="section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
           <h2>Recent public projects.</h2>
           <p>
-            These are the current public repositories I have been working on:
-            local Codex usage meters, Ollama model download tooling, desktop AI
-            experiments, and a voice effects demo.
+            These public repositories cluster around local AI utilities,
+            human-AI interaction experiments, and practical demo tools.
           </p>
+        </div>
+
+        <div class="lane-grid" aria-label="Project lanes">
+          <article class="lane-card">
+            <p class="status">Project lanes</p>
+            <h3>Local AI utilities</h3>
+            <p>
+              Privacy-safe meters, resumable model downloads, and small native
+              tools that keep data close to the machine.
+            </p>
+          </article>
+          <article class="lane-card">
+            <p class="status">Project lanes</p>
+            <h3>Human-AI interaction</h3>
+            <p>
+              Reading, prompting, and behaviour-profile experiments for making
+              long AI work easier to inspect and steer.
+            </p>
+          </article>
+          <article class="lane-card">
+            <p class="status">Project lanes</p>
+            <h3>Teaching demos</h3>
+            <p>
+              Playful classroom and Open Day prototypes that make computing
+              ideas visible, tactile, and quick to try.
+            </p>
+          </article>
         </div>
 
         <div class="feature-grid">
           <article class="feature-card featured">
-            <p class="status">VS Code extension</p>
+            <p class="status">Released / VS Code extension</p>
             <h3>Codex Local Meter</h3>
             <p>
               A local-only VS Code status bar meter for Codex CLI usage. It
@@ -101,7 +150,7 @@
             </div>
           </article>
           <article class="feature-card" id="local-tools">
-            <p class="status">macOS menu bar app</p>
+            <p class="status">Prototype / macOS menu bar app</p>
             <h3>Codex Local Meter App</h3>
             <p>
               A native macOS menu bar companion for Codex Local Meter. It reads
@@ -119,7 +168,27 @@
             </div>
           </article>
           <article class="feature-card featured">
-            <p class="status">CLI / web / macOS app</p>
+            <p class="status">Prototype / macOS reading app</p>
+            <h3>ReadLanes</h3>
+            <p>
+              A no-API Mac prototype for reading long ChatGPT conversations
+              without being dragged back to the latest message. It turns copied
+              responses and exported conversations into stable reading lanes,
+              anchored paragraphs, and queued follow-ups.
+            </p>
+            <div class="meta-list" aria-label="ReadLanes highlights">
+              <span>TypeScript</span>
+              <span>Electron</span>
+              <span>No API key</span>
+              <span>Reading-preserving</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/ReadLanes">GitHub</a>
+              <a href="https://github.com/ozyjay/ReadLanes/issues">Issues</a>
+            </div>
+          </article>
+          <article class="feature-card featured">
+            <p class="status">Usable / CLI, web, and macOS app</p>
             <h3>Ollama Manual Pull</h3>
             <p>
               A practical downloader for Ollama models when <code>ollama pull</code>
@@ -163,6 +232,32 @@
               <a href="https://github.com/ozyjay/VoiceChanger">GitHub</a>
               <a href="https://github.com/ozyjay/VoiceChanger/issues">Issues</a>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="principles" aria-label="Local-first principles">
+        <div class="section-heading">
+          <p class="eyebrow">Local-first principles</p>
+          <h2>Tools should explain themselves.</h2>
+          <p>
+            Recent Crunchy Codes projects favour explicit user control: local
+            files over hidden services, recoverable downloads over silent
+            failure, and privacy-safe metadata over unnecessary telemetry.
+          </p>
+        </div>
+        <div class="principle-list">
+          <article>
+            <h3>Stay close to the user</h3>
+            <p>Read local state directly, keep sensitive content on-device, and avoid network calls unless the tool genuinely needs them.</p>
+          </article>
+          <article>
+            <h3>Make progress recoverable</h3>
+            <p>Large downloads, long chats, and local experiments should preserve work instead of forcing people to start over.</p>
+          </article>
+          <article>
+            <h3>Keep the controls visible</h3>
+            <p>Prefer plain commands, clear status, and inspectable behaviour over magic that leaves the user guessing.</p>
           </article>
         </div>
       </section>
