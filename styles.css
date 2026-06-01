@@ -264,6 +264,52 @@ h3 {
   text-wrap: balance;
 }
 
+.about-me {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.58fr) minmax(0, 1.42fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+  margin: 0 clamp(20px, 5vw, 72px) clamp(26px, 5vw, 42px);
+  padding: clamp(24px, 5vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.about-identity {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
+.about-avatar {
+  display: block;
+  width: min(100%, 220px);
+  height: auto;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-identity h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+}
+
+.about-copy {
+  max-width: 760px;
+}
+
+.about-copy h2 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+.about-copy p {
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
 .section {
   padding: clamp(58px, 8vw, 108px) clamp(20px, 5vw, 72px);
 }
@@ -465,6 +511,7 @@ h3 {
   }
 
   .hero,
+  .about-me,
   .now-building,
   .lane-grid,
   .principle-list,
