@@ -13,7 +13,7 @@ Static GitHub Pages website for `crunchycodes.net`.
 
 ## Before launch
 
-- Replace the placeholder extension card in `index.html`.
-- Add Marketplace and GitHub repository links when extensions are published.
+- Keep the Codex Local Meter card in `index.html` aligned with the latest
+  Marketplace release.
 - Add your preferred contact details to `support.html` and `privacy.html`.
 - Keep `CNAME` in the repository root so GitHub Pages retains the custom domain.
