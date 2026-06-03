@@ -102,6 +102,7 @@ nav a:hover,
 }
 
 .hero-copy {
+  min-width: 0;
   max-width: 680px;
 }
 
@@ -189,7 +190,8 @@ h3 {
 }
 
 .workbench {
-  width: min(100%, 620px);
+  width: 100%;
+  max-width: 620px;
   min-width: 0;
   margin-left: auto;
   overflow: hidden;
@@ -257,10 +259,11 @@ h3 {
 }
 
 .tile strong {
+  max-width: 100%;
   color: var(--ink);
-  font-size: clamp(1.35rem, 11cqi, 2rem);
+  font-size: clamp(1.25rem, 9cqi, 1.9rem);
   line-height: 1.08;
-  overflow-wrap: normal;
+  overflow-wrap: anywhere;
   text-wrap: balance;
 }
 
@@ -516,7 +519,7 @@ h3 {
   .lane-grid,
   .principle-list,
   .feature-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .feature-card.featured {
@@ -542,7 +545,27 @@ h3 {
   }
 
   nav {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    width: 100%;
     justify-content: flex-start;
+    gap: 8px 16px;
+  }
+
+  .hero-copy {
+    width: 80vw;
+    width: 80dvw;
+    max-width: 100%;
+  }
+
+  .workbench {
+    width: 74vw;
+    width: 74dvw;
+    max-width: 100%;
+  }
+
+  .hero-copy p:not(.eyebrow) {
+    max-width: 100%;
   }
 
   .activity-list li {
@@ -556,5 +579,9 @@ h3 {
 
   .tile.large {
     min-height: 220px;
+  }
+
+  .tile strong {
+    font-size: clamp(1.45rem, 12cqi, 1.85rem);
   }
 }
