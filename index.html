@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crunchy Codes | VS Code Extensions</title>
+    <title>Crunchy Codes | Local-First Tools and Experiments</title>
     <meta
       name="description"
-      content="Crunchy Codes creates focused VS Code extensions, including Codex Local Meter for local-only Codex usage estimates."
+      content="Crunchy Codes is a small public workshop for local-first software tools, AI experiments, and practical developer utilities."
     />
     <link rel="canonical" href="https://crunchycodes.net/" />
     <link rel="stylesheet" href="styles.css" />
@@ -18,9 +18,12 @@
         <span>Crunchy Codes</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="#extensions">Extensions</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#now-building">Now building</a>
+        <a href="#local-tools">Local tools</a>
+        <a href="#tools">Tools</a>
         <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -28,77 +31,265 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">VS Code extensions</p>
-          <h1>Small tools for sharper coding sessions.</h1>
+          <p class="eyebrow">Local-first tools and experiments</p>
+          <h1>Public work from the bench.</h1>
           <p>
-            Crunchy Codes builds practical Visual Studio Code extensions with a
-            focus on clean workflows, predictable behavior, and helpful support.
+            Crunchy Codes is my public workshop for local-first software,
+            AI-assisted utilities, and small experiments that make development
+            workflows a little more useful.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#extensions">View extensions</a>
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#now-building">Now building</a>
+            <a class="button secondary" href="#local-tools">Local tools</a>
             <a class="button secondary" href="support.html">Get support</a>
           </div>
         </div>
 
-        <div class="preview" aria-label="Illustration of a code editor">
-          <div class="preview-toolbar">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="workbench" aria-label="Illustration of a project workbench">
+          <div class="workbench-header">
+            <span class="pill">idea</span>
+            <span class="pill">build</span>
+            <span class="pill">ship</span>
           </div>
-          <div class="preview-body">
-            <div class="line short"></div>
-            <div class="line"></div>
-            <div class="line medium"></div>
-            <div class="line accent"></div>
-            <div class="line medium"></div>
-            <div class="line short"></div>
+          <div class="workbench-grid">
+            <div class="tile large">
+              <span>Public</span>
+              <strong>Local tools</strong>
+            </div>
+            <div class="tile">
+              <span>AI</span>
+              <strong>Model work</strong>
+            </div>
+            <div class="tile">
+              <span>Demo</span>
+              <strong>Experiments</strong>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="extensions">
-        <div class="section-heading">
-          <p class="eyebrow">Marketplace</p>
-          <h2>Extensions</h2>
+      <section class="about-me" id="about" aria-label="About Dr Jason Holdsworth">
+        <div class="about-identity">
+          <img
+            class="about-avatar"
+            src="assets/jason-avatar.png"
+            alt="Illustrated avatar of Dr Jason Holdsworth"
+            width="320"
+            height="320"
+          />
+          <div>
+            <p class="eyebrow">Who am I</p>
+            <h2>Dr Jason Holdsworth</h2>
+          </div>
+        </div>
+        <div class="about-copy">
+          <h2>I build practical local-first tools.</h2>
           <p>
-            Published extensions from Crunchy Codes, with links to the Visual
-            Studio Marketplace, GitHub source, documentation, and issue tracking.
+            I'm Dr Jason Holdsworth, a Digital Technology academic and educator
+            at James Cook University, and the maker behind Crunchy Codes. My
+            work sits around local-first software, practical AI tools, teaching
+            demos, and human-AI interaction experiments.
+          </p>
+          <div class="meta-list" aria-label="About Jason highlights">
+            <span>Digital Technology educator</span>
+            <span>Local-first software</span>
+            <span>Teaching demos</span>
+            <span>Human-AI interaction</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="now-building" id="now-building" aria-label="Current public work">
+        <div>
+          <p class="eyebrow">Now building</p>
+          <h2>Recent workbench notes.</h2>
+        </div>
+        <ol class="activity-list">
+          <li>
+            <time datetime="2026-06-01">Jun 1</time>
+            <span>Codex Local Meter App menu bar updates</span>
+          </li>
+          <li>
+            <time datetime="2026-05-31">May 31</time>
+            <span>ReadLanes prototype and homepage refresh</span>
+          </li>
+          <li>
+            <time datetime="2026-05-30">May 30</time>
+            <span>Ollama Manual Pull, VoiceChanger, and local app packaging</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Recent public projects.</h2>
+          <p>
+            These public repositories cluster around local AI utilities,
+            human-AI interaction experiments, and practical demo tools.
           </p>
         </div>
 
-        <div class="extension-grid">
-          <article class="extension-card">
-            <p class="status">Latest version 0.3.2</p>
+        <div class="lane-grid" aria-label="Project lanes">
+          <article class="lane-card">
+            <p class="status">Project lanes</p>
+            <h3>Local AI utilities</h3>
+            <p>
+              Privacy-safe meters, resumable model downloads, and small native
+              tools that keep data close to the machine.
+            </p>
+          </article>
+          <article class="lane-card">
+            <p class="status">Project lanes</p>
+            <h3>Human-AI interaction</h3>
+            <p>
+              Reading, prompting, and behaviour-profile experiments for making
+              long AI work easier to inspect and steer.
+            </p>
+          </article>
+          <article class="lane-card">
+            <p class="status">Project lanes</p>
+            <h3>Teaching demos</h3>
+            <p>
+              Playful classroom and Open Day prototypes that make computing
+              ideas visible, tactile, and quick to try.
+            </p>
+          </article>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card featured">
+            <p class="status">Released / VS Code extension</p>
             <h3>Codex Local Meter</h3>
             <p>
-              Local-only Codex usage estimates in the VS Code status bar from
-              your local ~/.codex session files. Version 0.3.2 is the current
-              Marketplace release.
+              A local-only VS Code status bar meter for Codex CLI usage. It
+              reads Codex session files from your machine, estimates recent
+              activity, and is now available from the VS Code Marketplace while
+              keeping prompts, responses, code, and tool output off the network.
             </p>
+            <div class="meta-list" aria-label="Codex Local Meter highlights">
+              <span>Version 0.3.2</span>
+              <span>VS Code Marketplace</span>
+              <span>No network calls</span>
+              <span>No telemetry</span>
+            </div>
             <div class="card-links">
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=CrunchyCodes.codex-local-meter"
-                >Marketplace</a
-              >
-              <a href="https://github.com/ozyjay/Codex-Local-Meter"
-                >GitHub source</a
-              >
+              <a href="https://marketplace.visualstudio.com/items?itemName=CrunchyCodes.codex-local-meter">Marketplace</a>
+              <a href="https://github.com/ozyjay/Codex-Local-Meter">GitHub</a>
+              <a href="https://github.com/ozyjay/Codex-Local-Meter/issues">Issues</a>
+              <a href="privacy.html">Privacy notes</a>
             </div>
           </article>
-          <article class="extension-card">
-            <p class="status">Support ready</p>
-            <h3>Issue tracking</h3>
+          <article class="feature-card" id="local-tools">
+            <p class="status">Prototype / macOS menu bar app</p>
+            <h3>Codex Local Meter App</h3>
             <p>
-              Codex Local Meter support is handled through GitHub Issues, with
-              general support and privacy details available here.
+              A native macOS menu bar companion for Codex Local Meter. It reads
+              the same local Codex session files under <code>~/.codex</code>
+              and displays privacy-safe usage metadata without telemetry.
+            </p>
+            <div class="meta-list" aria-label="Codex Local Meter App highlights">
+              <span>Swift</span>
+              <span>Menu bar utility</span>
+              <span>Local-only</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/CodexLocalMeterApp">GitHub</a>
+              <a href="https://github.com/ozyjay/CodexLocalMeterApp/issues">Issues</a>
+            </div>
+          </article>
+          <article class="feature-card featured">
+            <p class="status">Prototype / macOS reading app</p>
+            <h3>ReadLanes</h3>
+            <p>
+              A no-API Mac prototype for reading long ChatGPT conversations
+              without being dragged back to the latest message. It turns copied
+              responses and exported conversations into stable reading lanes,
+              anchored paragraphs, and queued follow-ups.
+            </p>
+            <div class="meta-list" aria-label="ReadLanes highlights">
+              <span>TypeScript</span>
+              <span>Electron</span>
+              <span>No API key</span>
+              <span>Reading-preserving</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/ReadLanes">GitHub</a>
+              <a href="https://github.com/ozyjay/ReadLanes/issues">Issues</a>
+            </div>
+          </article>
+          <article class="feature-card featured">
+            <p class="status">Usable / CLI, web, and macOS app</p>
+            <h3>Ollama Manual Pull</h3>
+            <p>
+              A practical downloader for Ollama models when <code>ollama pull</code>
+              fails partway through. It supports resumable direct downloads,
+              SHA-256 verification, a local browser UI, and a native macOS app
+              wrapper.
+            </p>
+            <div class="meta-list" aria-label="Ollama Manual Pull highlights">
+              <span>Python</span>
+              <span>Resumable downloads</span>
+              <span>Verified blobs</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/ollama-manual-pull">GitHub</a>
+              <a href="https://github.com/ozyjay/ollama-manual-pull/issues">Issues</a>
+            </div>
+          </article>
+          <article class="feature-card" id="tools">
+            <p class="status">Desktop AI app</p>
+            <h3>ThoughtBench</h3>
+            <p>
+              A Tk desktop chat app for running local thinking-capable Gemma
+              and Qwen models, with behaviour profiles, restored conversations,
+              transcripts, diagnostics, and macOS-focused setup scripts.
             </p>
             <div class="card-links">
-              <a href="https://github.com/ozyjay/Codex-Local-Meter/issues"
-                >Report an issue</a
-              >
-              <a href="privacy.html">Privacy policy</a>
+              <a href="https://github.com/ozyjay/ThoughtBench">GitHub</a>
+              <a href="https://github.com/ozyjay/ThoughtBench/issues">Issues</a>
             </div>
+          </article>
+          <article class="feature-card">
+            <p class="status">Early demo</p>
+            <h3>VoiceChanger</h3>
+            <p>
+              An early PySide6 Open Day demo for recording, transforming,
+              playing, and eventually visualising voice audio. Current work
+              covers the GUI shell, microphone recording, playback, and initial
+              placeholder effects.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/VoiceChanger">GitHub</a>
+              <a href="https://github.com/ozyjay/VoiceChanger/issues">Issues</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="principles" aria-label="Local-first principles">
+        <div class="section-heading">
+          <p class="eyebrow">Local-first principles</p>
+          <h2>Tools should explain themselves.</h2>
+          <p>
+            Recent Crunchy Codes projects favour explicit user control: local
+            files over hidden services, recoverable downloads over silent
+            failure, and privacy-safe metadata over unnecessary telemetry.
+          </p>
+        </div>
+        <div class="principle-list">
+          <article>
+            <h3>Stay close to the user</h3>
+            <p>Read local state directly, keep sensitive content on-device, and avoid network calls unless the tool genuinely needs them.</p>
+          </article>
+          <article>
+            <h3>Make progress recoverable</h3>
+            <p>Large downloads, long chats, and local experiments should preserve work instead of forcing people to start over.</p>
+          </article>
+          <article>
+            <h3>Keep the controls visible</h3>
+            <p>Prefer plain commands, clear status, and inspectable behaviour over magic that leaves the user guessing.</p>
           </article>
         </div>
       </section>
@@ -106,10 +297,11 @@
       <section class="band" id="contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Questions, bugs, and extension support</h2>
+          <h2>Questions, bugs, and project support</h2>
           <p>
-            For extension support, feature requests, or security concerns, use
-            the support page or the issue tracker linked from each extension.
+            For project support, feature ideas, bug reports, or security
+            concerns, use the support page or the issue tracker linked from the
+            relevant project.
           </p>
         </div>
         <a class="button primary" href="support.html">Open support</a>
