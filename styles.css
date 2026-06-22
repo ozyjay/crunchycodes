@@ -418,6 +418,15 @@ h3 {
   background: #f8fbf7;
 }
 
+.feature-card.compact {
+  min-height: 220px;
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.feature-card.compact h3 {
+  font-size: 1.22rem;
+}
+
 .feature-card p {
   max-width: 58ch;
 }

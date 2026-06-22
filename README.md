@@ -16,22 +16,34 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 - `404.html`, `robots.txt`, `sitemap.xml`, and `CNAME` support GitHub Pages and
   the custom domain.
 
-## Featured projects
+## Featured portfolio
 
 The homepage currently features recent public Crunchy Codes repositories:
 
+- **TokenTrail**, an Open Day teaching demo that shows prompt tokens,
+  next-token candidates, probabilities, and generated text as a replayable
+  local trace.
+- **HuggingFacePull**, a local FastAPI and CLI tool for searching, queueing,
+  downloading, and cleaning up Hugging Face Hub model snapshots.
+- **MLXDashboard** and **MLXChat**, paired Swift tools for managing an
+  MLX-backed localhost provider and checking it through local chat clients.
 - **Codex Local Meter**, a VS Code extension that shows local-only Codex CLI
   usage estimates from `~/.codex` session files.
 - **Codex Local Meter App**, a native macOS menu bar companion for the VS Code
   extension.
 - **ollama-manual-pull**, a CLI, web UI, and macOS app for manually downloading
   and registering Ollama models.
+- **CameraShotPicker**, a SwiftUI utility for local camera RAW triage and
+  keeper export.
+- **OllamaAgent** and **OllamaChat**, local Ollama control-plane and VS Code
+  assistant experiments.
 - **ThoughtBench**, a local desktop chat app for Gemma and Qwen models.
 - **VoiceChanger**, an early Open Day voice effects demo.
 
 When releasing a new project version, check:
 
-- Any version badges or status labels in `index.html`.
+- Any version badges, project lanes, timeline entries, and status labels in
+  `index.html`.
 - The Marketplace, GitHub, and issue tracker links in `index.html`.
 - The support details in `support.html`.
 - The privacy summary in `privacy.html` when privacy claims change.
