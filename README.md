@@ -18,27 +18,25 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 
 ## Featured portfolio
 
-The homepage currently features recent public Crunchy Codes repositories:
+The homepage currently features recent public Crunchy Codes repositories and
+model artefacts:
 
-- **TokenTrail**, an Open Day teaching demo that shows prompt tokens,
-  next-token candidates, probabilities, and generated text as a replayable
-  local trace.
-- **HuggingFacePull**, a local FastAPI and CLI tool for searching, queueing,
-  downloading, and cleaning up Hugging Face Hub model snapshots.
-- **MLXDashboard** and **MLXChat**, paired Swift tools for managing an
-  MLX-backed localhost provider and checking it through local chat clients.
-- **Codex Local Meter**, a VS Code extension that shows local-only Codex CLI
-  usage estimates from `~/.codex` session files.
-- **Codex Local Meter App**, a native macOS menu bar companion for the VS Code
-  extension.
-- **ollama-manual-pull**, a CLI, web UI, and macOS app for manually downloading
-  and registering Ollama models.
-- **CameraShotPicker**, a SwiftUI utility for local camera RAW triage and
-  keeper export.
-- **OllamaAgent** and **OllamaChat**, local Ollama control-plane and VS Code
-  assistant experiments.
-- **ThoughtBench**, a local desktop chat app for Gemma and Qwen models.
-- **VoiceChanger**, an early Open Day voice effects demo.
+- **ModelDeck**, a local runtime manager and stable capability gateway for a
+  coordinated suite of local AI demonstrations.
+- **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
+  and BF16 hybrid for local text diffusion on AMD ROCm.
+- **SceneChat**, a local camera, object-detection, and multimodal
+  scene-description experience with explicit privacy and replay controls.
+- **SpeechShift**, a replay-first speech-transformation demonstration with an
+  opt-in, memory-only microphone path and local DSP baseline.
+- **Text Diffusion Lab**, a staged text-refinement demo with scripted fallback
+  and an optional ModelDeck-backed DiffusionGemma mode.
+- **Can You Spot the Scam?**, a local-first cybersecurity awareness game.
+- **Humans in the Loop**, a crowd-controlled demonstration of AI oversight.
+- **TokenTrail**, a token-level generation and probability teaching demo.
+- **Repartee**, a local interactive voice-conversation research MVP.
+- **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora.
+- **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager.
 
 When releasing a new project version, check:
 
