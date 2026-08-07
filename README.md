@@ -23,19 +23,27 @@ model artefacts:
 
 - **ModelDeck**, a local runtime manager and stable capability gateway for a
   coordinated suite of local AI demonstrations.
-- **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
-  and BF16 hybrid for local text diffusion on AMD ROCm.
+- **VisionModelQuest**, a local-first vision-language model explorer and
+  benchmark laboratory for Framework Desktop.
+- **AgentWorldLab**, an offline-first Qwen-AgentWorld evaluation harness that
+  treats generated observations as untrusted data and never executes them.
 - **SceneChat**, a local camera, object-detection, and multimodal
   scene-description experience with explicit privacy and replay controls.
+- **SpeakText**, private local speech-to-text dictation for Fedora GNOME Wayland.
 - **SpeechShift**, a replay-first speech-transformation demonstration with an
   opt-in, memory-only microphone path and local DSP baseline.
+- **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
+  and BF16 hybrid for local text diffusion on AMD ROCm.
 - **Text Diffusion Lab**, a staged text-refinement demo with scripted fallback
   and an optional ModelDeck-backed DiffusionGemma mode.
 - **Can You Spot the Scam?**, a local-first cybersecurity awareness game.
 - **Humans in the Loop**, a crowd-controlled demonstration of AI oversight.
 - **TokenTrail**, a token-level generation and probability teaching demo.
 - **Repartee**, a local interactive voice-conversation research MVP.
-- **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora.
+- **Bouncer**, an Android live wallpaper maker project with configurable physics,
+  calibration, and adaptive performance controls.
+- **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora
+  with local sensor history plus optional Auto-Powersaver modes and diagnostics.
 - **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager.
 
 When releasing a new project version, check:
