@@ -106,24 +106,24 @@
         </div>
         <ol class="activity-list">
           <li>
-            <time datetime="2026-08-07">Aug 7</time>
-            <span>Bouncer adaptive performance modes, calibration, and live wallpaper controls</span>
+            <time datetime="2026-08-12">Aug 12</time>
+            <span>WayFinder owned SLM runtime, bounded agent loop, and ModelDeck integration</span>
           </li>
           <li>
-            <time datetime="2026-08-06">Aug 6</time>
-            <span>SpeakText private local dictation for Fedora GNOME Wayland</span>
+            <time datetime="2026-08-12">Aug 12</time>
+            <span>ModelDeck capability policy, tool-call compatibility, and prefix-cache controls</span>
           </li>
           <li>
-            <time datetime="2026-08-06">Aug 6</time>
-            <span>AgentWorldLab offline-first Qwen-AgentWorld evaluation harness</span>
+            <time datetime="2026-08-11">Aug 11</time>
+            <span>Grab screenshots, editing, and GIF recording for Fedora GNOME</span>
           </li>
           <li>
-            <time datetime="2026-08-06">Aug 6</time>
-            <span>VisionModelQuest local vision-language explorer and benchmark laboratory</span>
+            <time datetime="2026-08-11">Aug 11</time>
+            <span>SpeakText revisable IBus dictation previews and gesture controls</span>
           </li>
           <li>
-            <time datetime="2026-08-05">Aug 5</time>
-            <span>System Usage Monitor Auto-Powersaver modes and diagnostics</span>
+            <time datetime="2026-08-09">Aug 9</time>
+            <span>Bouncer two-stage calibration and frame-timing telemetry</span>
           </li>
         </ol>
       </section>
@@ -173,18 +173,39 @@
             <p>
               A runtime manager and stable capability gateway for local AI on
               the Framework Desktop. It turns pinned model snapshots into
-              explicitly managed workers and publishes versioned routes for a
-              coordinated suite of public demos.
+              explicitly managed workers, publishes versioned Routing Profiles,
+              and governs capabilities for local applications and public demos.
             </p>
             <div class="meta-list" aria-label="ModelDeck highlights">
               <span>Python</span>
               <span>ROCm</span>
               <span>Capability gateway</span>
-              <span>Versioned events</span>
+              <span>Routing profiles</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/ModelDeck">GitHub</a>
               <a href="https://github.com/ozyjay/ModelDeck/issues">Issues</a>
+            </div>
+          </article>
+
+          <article class="feature-card featured">
+            <p class="status">Research POC / SLM-native agent orchestration</p>
+            <h3>WayFinder</h3>
+            <p>
+              A local-first VS Code extension exploring explainable routing and
+              bounded agent loops for small local models. Its owned runtime
+              controls context budgets, tool exposure, validation, escalation,
+              and privacy-conscious diagnostics through ModelDeck.
+            </p>
+            <div class="meta-list" aria-label="WayFinder highlights">
+              <span>TypeScript</span>
+              <span>VS Code</span>
+              <span>Local SLMs</span>
+              <span>Bounded agent loop</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/WayFinder">GitHub</a>
+              <a href="https://github.com/ozyjay/WayFinder/issues">Issues</a>
             </div>
           </article>
 
@@ -255,20 +276,41 @@
             <p class="status">Local desktop tool / private speech-to-text</p>
             <h3>SpeakText</h3>
             <p>
-              Private push-to-talk dictation for Fedora GNOME Wayland using a
-              local Whisper model. Audio and transcripts stay in memory, while
-              short-lived desktop portal sessions handle the global shortcut
-              and keyboard-only text insertion.
+              Private local dictation for Fedora GNOME Wayland using whisper.cpp
+              and an IBus input method. Configurable Shift or Control gestures
+              drive record, review, and commit with revisable in-place previews;
+              audio and transcripts stay in memory.
             </p>
             <div class="meta-list" aria-label="SpeakText highlights">
               <span>Python</span>
-              <span>Whisper</span>
+              <span>whisper.cpp</span>
               <span>GNOME Wayland</span>
-              <span>Local-first</span>
+              <span>IBus</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/SpeakText">GitHub</a>
               <a href="https://github.com/ozyjay/SpeakText/issues">Issues</a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <p class="status">Fedora desktop tool / screenshots and GIFs</p>
+            <h3>Grab</h3>
+            <p>
+              A GNOME top-bar capture tool for whole-desktop screenshots and
+              silent GIF recordings on Wayland. It supports clipboard capture,
+              crop and pen editing, optional PNG saving, and private temporary
+              editing copies retained for no more than 24 hours.
+            </p>
+            <div class="meta-list" aria-label="Grab highlights">
+              <span>Python</span>
+              <span>GTK 4</span>
+              <span>GNOME Wayland</span>
+              <span>Local-first</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/Grab">GitHub</a>
+              <a href="https://github.com/ozyjay/Grab/issues">Issues</a>
             </div>
           </article>
 
@@ -396,9 +438,9 @@
             <h3>Bouncer</h3>
             <p>
               An Android live wallpaper that turns glowing-ball physics into a
-              configurable device experiment, with calibration, adaptive or
-              fixed performance modes, optional solid-body collisions, and
-              real-time appearance and motion controls.
+              configurable device experiment, with two-stage preview and
+              wallpaper calibration, live frame-timing telemetry, adaptive
+              performance controls, optional collisions, and visual controls.
             </p>
             <div class="card-links">
               <a href="https://github.com/ozyjay/BouncerScreenSaver">GitHub</a>

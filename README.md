@@ -21,15 +21,20 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 The homepage currently features recent public Crunchy Codes repositories and
 model artefacts:
 
-- **ModelDeck**, a local runtime manager and stable capability gateway for a
-  coordinated suite of local AI demonstrations.
+- **ModelDeck**, a local runtime manager and stable capability gateway with
+  versioned Routing Profiles and governed capabilities for local AI applications.
+- **WayFinder**, a local-first VS Code research POC for explainable, SLM-native
+  routing, bounded agent loops, and privacy-conscious diagnostics.
 - **VisionModelQuest**, a local-first vision-language model explorer and
   benchmark laboratory for Framework Desktop.
 - **AgentWorldLab**, an offline-first Qwen-AgentWorld evaluation harness that
   treats generated observations as untrusted data and never executes them.
 - **SceneChat**, a local camera, object-detection, and multimodal
   scene-description experience with explicit privacy and replay controls.
-- **SpeakText**, private local speech-to-text dictation for Fedora GNOME Wayland.
+- **SpeakText**, private local speech-to-text dictation for Fedora GNOME
+  Wayland, with revisable IBus previews and configurable gesture controls.
+- **Grab**, a GNOME Wayland screenshot and GIF capture tool with clipboard,
+  editing, and optional local-save workflows.
 - **SpeechShift**, a replay-first speech-transformation demonstration with an
   opt-in, memory-only microphone path and local DSP baseline.
 - **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
@@ -41,7 +46,7 @@ model artefacts:
 - **TokenTrail**, a token-level generation and probability teaching demo.
 - **Repartee**, a local interactive voice-conversation research MVP.
 - **Bouncer**, an Android live wallpaper maker project with configurable physics,
-  calibration, and adaptive performance controls.
+  two-stage calibration, frame-timing telemetry, and adaptive performance controls.
 - **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora
   with local sensor history plus optional Auto-Powersaver modes and diagnostics.
 - **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager.
