@@ -22,9 +22,11 @@ The homepage currently features recent public Crunchy Codes repositories and
 model artefacts:
 
 - **ModelDeck**, a local runtime manager and stable capability gateway with
-  versioned Routing Profiles and governed capabilities for local AI applications.
+  versioned Routing Profiles, governed capabilities, and route-level tool-call
+  rehearsal for local AI applications.
 - **WayFinder**, a local-first VS Code research POC for explainable, SLM-native
-  routing, bounded agent loops, and privacy-conscious diagnostics.
+  routing, bounded agent loops, bounded read-only workspace evidence, and live
+  evidence-coverage evaluation.
 - **VisionModelQuest**, a local-first vision-language model explorer and
   benchmark laboratory for Framework Desktop.
 - **AgentWorldLab**, an offline-first Qwen-AgentWorld evaluation harness that
