@@ -10,6 +10,23 @@
     />
     <link rel="canonical" href="https://crunchycodes.net/squiggletown/" />
     <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .squiggletown-hero {
+        margin: 1.5rem 0 2.5rem;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        background: #eef7ff;
+        box-shadow: 0 18px 50px rgba(27, 58, 87, 0.14);
+      }
+
+      .squiggletown-hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -32,6 +49,15 @@
         learners. Children help the people and businesses around town by
         practising letters and repairing signs through short, playful activities.
       </p>
+
+      <figure class="squiggletown-hero">
+        <img
+          id="squiggletown-marketing-image"
+          alt="Squiggle Town mascot helping repair a town shop sign as part of a playful handwriting adventure"
+          width="800"
+          height="450"
+        />
+      </figure>
 
       <section>
         <h2>Practice first</h2>
@@ -103,5 +129,21 @@
         <a href="/">Home</a>
       </div>
     </footer>
+
+    <script>
+      fetch("assets/marketing-1.b64")
+        .then((response) => {
+          if (!response.ok) throw new Error("Unable to load Squiggle Town artwork");
+          return response.text();
+        })
+        .then((base64) => {
+          const image = document.getElementById("squiggletown-marketing-image");
+          image.src = `data:image/jpeg;base64,${base64.trim()}`;
+        })
+        .catch(() => {
+          const figure = document.querySelector(".squiggletown-hero");
+          if (figure) figure.hidden = true;
+        });
+    </script>
   </body>
 </html>
