@@ -52,10 +52,10 @@
 
       <figure class="squiggletown-hero">
         <img
-          id="squiggletown-marketing-image"
+          src="assets/squiggletown-marketing.png"
           alt="Squiggle Town mascot helping repair a town shop sign as part of a playful handwriting adventure"
-          width="800"
-          height="450"
+          width="1672"
+          height="941"
         />
       </figure>
 
@@ -129,21 +129,5 @@
         <a href="/">Home</a>
       </div>
     </footer>
-
-    <script>
-      fetch("assets/marketing-1.b64")
-        .then((response) => {
-          if (!response.ok) throw new Error("Unable to load Squiggle Town artwork");
-          return response.text();
-        })
-        .then((base64) => {
-          const image = document.getElementById("squiggletown-marketing-image");
-          image.src = `data:image/jpeg;base64,${base64.trim()}`;
-        })
-        .catch(() => {
-          const figure = document.querySelector(".squiggletown-hero");
-          if (figure) figure.hidden = true;
-        });
-    </script>
   </body>
 </html>
