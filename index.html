@@ -107,24 +107,24 @@
         </div>
         <ol class="activity-list">
           <li>
-            <time datetime="2026-08-15">Aug 15</time>
-            <span>ModelDeck Qwen3.5 chat runtime and route-level tool-calling rehearsal</span>
+            <time datetime="2026-08-26">Aug 26</time>
+            <span>ModelDeck approved Qwen3.5 GGUF/Vulkan candidates and reviewed Qwen3.8 runtime paths</span>
           </li>
           <li>
-            <time datetime="2026-08-15">Aug 15</time>
-            <span>WayFinder bounded workspace readback and live evidence-coverage evaluation</span>
+            <time datetime="2026-08-26">Aug 26</time>
+            <span>ModelDeck Qwen tool-call normalisation and recovery</span>
           </li>
           <li>
-            <time datetime="2026-08-15">Aug 15</time>
-            <span>SpeakText one-click IBus input-source reactivation</span>
+            <time datetime="2026-08-25">Aug 25</time>
+            <span>Codex Local Meter 0.3.14 primary and secondary rate-limit handling</span>
           </li>
           <li>
-            <time datetime="2026-08-12">Aug 12</time>
-            <span>WayFinder owned SLM runtime, bounded agent loop, and ModelDeck integration</span>
+            <time datetime="2026-08-25">Aug 25</time>
+            <span>SpeakText physical-microphone selection fallback</span>
           </li>
           <li>
-            <time datetime="2026-08-12">Aug 12</time>
-            <span>ModelDeck capability policy, tool-call compatibility, and prefix-cache controls</span>
+            <time datetime="2026-08-23">Aug 23</time>
+            <span>HuggingFacePull model-family grouping, cache-aware removal, and optional Xet transfers</span>
           </li>
         </ol>
       </section>
@@ -175,14 +175,15 @@
               A runtime manager and stable capability gateway for local AI on
               the Framework Desktop. It turns pinned model snapshots into
               explicitly managed workers, publishes versioned Routing Profiles,
-              governs capabilities, and rehearses tool-calling compatibility
-              before local applications rely on a route.
+              and now supports manifest-approved Qwen3.5 GGUF/Vulkan candidates,
+              reviewed Qwen3.8 runtime paths, explicit thinking-mode policies,
+              and Qwen tool-call recovery.
             </p>
             <div class="meta-list" aria-label="ModelDeck highlights">
               <span>Python</span>
-              <span>ROCm</span>
+              <span>ROCm and Vulkan</span>
               <span>Routing profiles</span>
-              <span>Tool-call rehearsal</span>
+              <span>Candidate manifests</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/ModelDeck">GitHub</a>
@@ -282,7 +283,8 @@
               Private local dictation for Fedora GNOME Wayland using whisper.cpp
               and an IBus input method. Configurable Shift or Control gestures
               drive record, review, and commit with revisable in-place previews;
-              audio and transcripts stay in memory.
+              audio and transcripts stay in memory. When no default source is
+              configured, it can select a sole physical microphone safely.
             </p>
             <div class="meta-list" aria-label="SpeakText highlights">
               <span>Python</span>
@@ -452,6 +454,21 @@
           </article>
 
           <article class="feature-card compact">
+            <p class="status">VS Code extension / local usage visibility</p>
+            <h3>Codex Local Meter</h3>
+            <p>
+              A local-only status-bar extension that reads Codex session files
+              and shows the Primary and Secondary rate limits Codex reports,
+              without uploading session data or displaying prompts, responses,
+              code, or tool output.
+            </p>
+            <div class="card-links">
+              <a href="https://marketplace.visualstudio.com/items?itemName=CrunchyCodes.codex-local-meter">Marketplace</a>
+              <a href="https://github.com/ozyjay/Codex-Local-Meter/issues">Issues</a>
+            </div>
+          </article>
+
+          <article class="feature-card compact">
             <p class="status">GNOME extension + host safety service / Framework Desktop</p>
             <h3>System Usage Monitor</h3>
             <p>
@@ -471,8 +488,10 @@
             <h3>HuggingFacePull</h3>
             <p>
               A local FastAPI, Electron, and command-line tool for finding,
-              queueing, downloading, and cleaning up Hugging Face model
-              snapshots, including resumable low-concurrency transfers.
+              grouping, queueing, and downloading Hugging Face model snapshots.
+              It honours standard cache overrides, supports low-concurrency or
+              opt-in Xet transfers, and separates library-record removal from
+              deletion of cached model data.
             </p>
             <div class="card-links">
               <a href="https://github.com/ozyjay/HuggingFacePull">GitHub</a>

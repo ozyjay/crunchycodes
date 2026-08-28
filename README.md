@@ -22,8 +22,9 @@ The homepage currently features recent public Crunchy Codes repositories and
 model artefacts:
 
 - **ModelDeck**, a local runtime manager and stable capability gateway with
-  versioned Routing Profiles, governed capabilities, and route-level tool-call
-  rehearsal for local AI applications.
+  versioned Routing Profiles, manifest-approved Qwen3.5 GGUF/Vulkan candidates,
+  reviewed Qwen3.8 runtime paths, explicit thinking-mode policies, and Qwen
+  tool-call recovery.
 - **WayFinder**, a local-first VS Code research POC for explainable, SLM-native
   routing, bounded agent loops, bounded read-only workspace evidence, and live
   evidence-coverage evaluation.
@@ -34,7 +35,8 @@ model artefacts:
 - **SceneChat**, a local camera, object-detection, and multimodal
   scene-description experience with explicit privacy and replay controls.
 - **SpeakText**, private local speech-to-text dictation for Fedora GNOME
-  Wayland, with revisable IBus previews and configurable gesture controls.
+  Wayland, with revisable IBus previews, configurable gesture controls, and a
+  safe sole-physical-microphone fallback when no default source is configured.
 - **Grab**, a GNOME Wayland screenshot and GIF capture tool with clipboard,
   editing, and optional local-save workflows.
 - **SpeechShift**, a replay-first speech-transformation demonstration with an
@@ -49,9 +51,13 @@ model artefacts:
 - **Repartee**, a local interactive voice-conversation research MVP.
 - **Bouncer**, an Android live wallpaper maker project with configurable physics,
   two-stage calibration, frame-timing telemetry, and adaptive performance controls.
+- **Codex Local Meter**, a local-only VS Code extension that preserves the
+  Primary and Secondary rate-limit identities Codex reports while keeping
+  session content on the user's machine.
 - **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora
   with local sensor history plus optional Auto-Powersaver modes and diagnostics.
-- **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager.
+- **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager with
+  grouped model families, cache-aware removal, and optional Xet transfers.
 
 When releasing a new project version, check:
 
