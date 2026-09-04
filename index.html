@@ -107,24 +107,24 @@
         </div>
         <ol class="activity-list">
           <li>
-            <time datetime="2026-08-26">Aug 26</time>
-            <span>ModelDeck approved Qwen3.5 GGUF/Vulkan candidates and reviewed Qwen3.8 runtime paths</span>
+            <time datetime="2026-09-02">Sep 2</time>
+            <span>Codex Router Activity Bar workflow, live Codex selection, and ModelDeck proxy advisory</span>
           </li>
           <li>
-            <time datetime="2026-08-26">Aug 26</time>
-            <span>ModelDeck Qwen tool-call normalisation and recovery</span>
+            <time datetime="2026-08-29">Aug 29</time>
+            <span>ModelConverter hardware-aware GGUF planning, conversion, and evidence workbench</span>
           </li>
           <li>
-            <time datetime="2026-08-25">Aug 25</time>
-            <span>Codex Local Meter 0.3.14 primary and secondary rate-limit handling</span>
+            <time datetime="2026-08-29">Aug 29</time>
+            <span>ModelDeck Live worker controls and loopback OpenCode configuration</span>
           </li>
           <li>
-            <time datetime="2026-08-25">Aug 25</time>
-            <span>SpeakText physical-microphone selection fallback</span>
+            <time datetime="2026-08-29">Aug 29</time>
+            <span>SpeakText active-dictation key isolation for safer editor use</span>
           </li>
           <li>
-            <time datetime="2026-08-23">Aug 23</time>
-            <span>HuggingFacePull model-family grouping, cache-aware removal, and optional Xet transfers</span>
+            <time datetime="2026-08-29">Aug 29</time>
+            <span>WayFinder privacy-safe live traces and bounded recovery from tool errors</span>
           </li>
         </ol>
       </section>
@@ -153,8 +153,9 @@
             <p class="status">Project lanes</p>
             <h3>Local AI infrastructure</h3>
             <p>
-              Shared runtimes, evaluation harnesses, local model clients, and
-              explicit offline fallbacks for dependable, inspectable experiments.
+              Shared runtimes, routing and conversion workbenches, evaluation
+              harnesses, local model clients, and explicit offline fallbacks for
+              dependable, inspectable experiments.
             </p>
           </article>
           <article class="lane-card">
@@ -175,19 +176,43 @@
               A runtime manager and stable capability gateway for local AI on
               the Framework Desktop. It turns pinned model snapshots into
               explicitly managed workers, publishes versioned Routing Profiles,
-              and now supports manifest-approved Qwen3.5 GGUF/Vulkan candidates,
-              reviewed Qwen3.8 runtime paths, explicit thinking-mode policies,
-              and Qwen tool-call recovery.
+              and supports manifest-approved Qwen3.5 GGUF/Vulkan candidates and
+              reviewed Qwen3.8 runtime paths. Qwen3.5 and Gemma 4 routes support
+              tool calling, while the Live view controls published workers and
+              a checked-in profile connects OpenCode over loopback.
             </p>
             <div class="meta-list" aria-label="ModelDeck highlights">
               <span>Python</span>
               <span>ROCm and Vulkan</span>
               <span>Routing profiles</span>
-              <span>Candidate manifests</span>
+              <span>OpenCode routing</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/ModelDeck">GitHub</a>
               <a href="https://github.com/ozyjay/ModelDeck/issues">Issues</a>
+            </div>
+          </article>
+
+          <article class="feature-card featured">
+            <p class="status">Research POC / Codex allocation adviser</p>
+            <h3>Codex Router</h3>
+            <p>
+              A local VS Code companion that discovers available Codex models
+              and reasoning efforts, recommends a pairing through a transparent
+              deterministic policy or opt-in ModelDeck classifier, and requires
+              approval or override before streaming the task through Codex App
+              Server. Optional outcome records remain local and omit task and
+              source content.
+            </p>
+            <div class="meta-list" aria-label="Codex Router highlights">
+              <span>TypeScript</span>
+              <span>VS Code</span>
+              <span>Codex App Server</span>
+              <span>Local SLM option</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/CodexRouter">GitHub</a>
+              <a href="https://github.com/ozyjay/CodexRouter/issues">Issues</a>
             </div>
           </article>
 
@@ -198,18 +223,41 @@
               A local-first VS Code extension exploring explainable routing and
               bounded agent loops for small local models. Its owned runtime now
               supports bounded read-only workspace evidence, deterministic
-              validation and escalation, plus live readback evaluation through
-              ModelDeck without recording prompts or source content.
+              validation and escalation, live readback evaluation, an ephemeral
+              privacy-safe debug trace, and bounded recovery from eligible tool
+              errors. Persisted diagnostics omit prompts and source content.
             </p>
             <div class="meta-list" aria-label="WayFinder highlights">
               <span>TypeScript</span>
               <span>VS Code</span>
               <span>Bounded agent loop</span>
-              <span>Readback evaluation</span>
+              <span>Privacy-safe trace</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/WayFinder">GitHub</a>
               <a href="https://github.com/ozyjay/WayFinder/issues">Issues</a>
+            </div>
+          </article>
+
+          <article class="feature-card featured">
+            <p class="status">Active build / model conversion workbench</p>
+            <h3>ModelConverter</h3>
+            <p>
+              A Linux desktop workbench that inspects cached Hugging Face models,
+              ranks hardware-appropriate GGUF recipes, and runs pinned llama.cpp
+              and Vulkan conversion and validation pipelines. Source caches stay
+              read-only, while derived artefacts retain hashes, toolchain receipts,
+              hardware fingerprints, and capability evidence.
+            </p>
+            <div class="meta-list" aria-label="ModelConverter highlights">
+              <span>TypeScript</span>
+              <span>Electron</span>
+              <span>llama.cpp</span>
+              <span>Vulkan</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/ozyjay/ModelConverter">GitHub</a>
+              <a href="https://github.com/ozyjay/ModelConverter/issues">Issues</a>
             </div>
           </article>
 
@@ -284,7 +332,9 @@
               and an IBus input method. Configurable Shift or Control gestures
               drive record, review, and commit with revisable in-place previews;
               audio and transcripts stay in memory. When no default source is
-              configured, it can select a sole physical microphone safely.
+              configured, it can select a sole physical microphone safely. While
+              dictation is active, ordinary editor keys are held so they cannot
+              submit a chat or move focus before review is complete.
             </p>
             <div class="meta-list" aria-label="SpeakText highlights">
               <span>Python</span>

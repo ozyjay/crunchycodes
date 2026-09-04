@@ -23,11 +23,18 @@ model artefacts:
 
 - **ModelDeck**, a local runtime manager and stable capability gateway with
   versioned Routing Profiles, manifest-approved Qwen3.5 GGUF/Vulkan candidates,
-  reviewed Qwen3.8 runtime paths, explicit thinking-mode policies, and Qwen
-  tool-call recovery.
+  reviewed Qwen3.8 runtime paths, tool-calling Qwen3.5 and Gemma 4 routes, Live
+  worker controls, and loopback OpenCode configuration.
+- **Codex Router**, a local VS Code companion that recommends a current Codex
+  model and reasoning effort through a deterministic policy or opt-in ModelDeck
+  classifier before an explicitly approved Codex App Server turn.
 - **WayFinder**, a local-first VS Code research POC for explainable, SLM-native
   routing, bounded agent loops, bounded read-only workspace evidence, and live
-  evidence-coverage evaluation.
+  evidence-coverage evaluation, with privacy-safe live traces and bounded
+  recovery from eligible tool errors.
+- **ModelConverter**, a hardware-aware Linux workbench for planning and running
+  pinned llama.cpp/Vulkan GGUF transformations while retaining provenance,
+  hardware fingerprints, and validation evidence.
 - **VisionModelQuest**, a local-first vision-language model explorer and
   benchmark laboratory for Framework Desktop.
 - **AgentWorldLab**, an offline-first Qwen-AgentWorld evaluation harness that
@@ -36,7 +43,8 @@ model artefacts:
   scene-description experience with explicit privacy and replay controls.
 - **SpeakText**, private local speech-to-text dictation for Fedora GNOME
   Wayland, with revisable IBus previews, configurable gesture controls, and a
-  safe sole-physical-microphone fallback when no default source is configured.
+  safe sole-physical-microphone fallback when no default source is configured;
+  ordinary editor keys are held while dictation is active.
 - **Grab**, a GNOME Wayland screenshot and GIF capture tool with clipboard,
   editing, and optional local-save workflows.
 - **SpeechShift**, a replay-first speech-transformation demonstration with an
