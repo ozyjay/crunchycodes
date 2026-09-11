@@ -28,7 +28,7 @@
     <main class="content-page">
       <p class="eyebrow">Privacy</p>
       <h1>Privacy policy.</h1>
-      <p>Last updated: June 4, 2026</p>
+      <p>Last updated: September 11, 2026</p>
 
       <section>
         <h2>Overview</h2>
@@ -70,8 +70,14 @@
         <h2>Codex Local Meter</h2>
         <p>
           Codex Local Meter reads local Codex session files to show derived usage
-          estimates in VS Code. It is designed not to upload data, collect
-          telemetry, modify Codex files, or display prompt and response content.
+          estimates in VS Code. By default, the extension processes that data
+          only on the device. Optional live account telemetry is disabled by
+          default; when enabled, the extension uses the locally installed Codex
+          App Server and existing Codex authentication to request current account
+          rate-limit metadata. This may contact Codex services, but does not start
+          a model turn or send session content. The extension does not collect
+          analytics, modify Codex files, or display prompts, responses, code, or
+          tool output.
         </p>
       </section>
     </main>

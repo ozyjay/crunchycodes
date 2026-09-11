@@ -24,10 +24,12 @@ model artefacts:
 - **ModelDeck**, a local runtime manager and stable capability gateway with
   versioned Routing Profiles, manifest-approved Qwen3.5 GGUF/Vulkan candidates,
   reviewed Qwen3.8 runtime paths, tool-calling Qwen3.5 and Gemma 4 routes, Live
-  worker controls, and loopback OpenCode configuration.
+  worker controls, loopback OpenCode configuration, guarded state transfer, and
+  read-only demo preflight.
 - **Codex Router**, a local VS Code companion that recommends a current Codex
   model and reasoning effort through a deterministic policy or opt-in ModelDeck
-  classifier before an explicitly approved Codex App Server turn.
+  classifier before explicitly approved Codex App Server turns, with bounded
+  sequential planning and optional output-adaptive replanning.
 - **WayFinder**, a local-first VS Code research POC for explainable, SLM-native
   routing, bounded agent loops, bounded read-only workspace evidence, and live
   evidence-coverage evaluation, with privacy-safe live traces and bounded
@@ -40,7 +42,8 @@ model artefacts:
 - **AgentWorldLab**, an offline-first Qwen-AgentWorld evaluation harness that
   treats generated observations as untrusted data and never executes them.
 - **SceneChat**, a local camera, object-detection, and multimodal
-  scene-description experience with explicit privacy and replay controls.
+  scene-description experience with explicit privacy and replay controls,
+  stable ModelDeck route checks, and request-correlated timing evidence.
 - **SpeakText**, private local speech-to-text dictation for Fedora GNOME
   Wayland, with revisable IBus previews, configurable gesture controls, and a
   safe sole-physical-microphone fallback when no default source is configured;
@@ -52,16 +55,20 @@ model artefacts:
 - **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
   and BF16 hybrid for local text diffusion on AMD ROCm.
 - **Text Diffusion Lab**, a staged text-refinement demo with scripted fallback
-  and an optional ModelDeck-backed DiffusionGemma mode.
+  and an optional ModelDeck-backed DiffusionGemma mode using native capability
+  discovery and an explicit submit, poll, and cancel job lifecycle.
 - **Can You Spot the Scam?**, a local-first cybersecurity awareness game.
 - **Humans in the Loop**, a crowd-controlled demonstration of AI oversight.
-- **TokenTrail**, a token-level generation and probability teaching demo.
+- **TokenTrail**, a token-level generation and probability teaching demo with
+  ModelDeck native capability discovery, explicit cancellation, and runtime
+  refresh controls.
 - **Repartee**, a local interactive voice-conversation research MVP.
 - **Bouncer**, an Android live wallpaper maker project with configurable physics,
   two-stage calibration, frame-timing telemetry, and adaptive performance controls.
-- **Codex Local Meter**, a local-only VS Code extension that preserves the
-  Primary and Secondary rate-limit identities Codex reports while keeping
-  session content on the user's machine.
+- **Codex Local Meter**, a local-first VS Code extension that preserves reported
+  rate-limit identities, shows a rolling local token pace, and keeps session
+  content on the user's machine; optional live account reads use Codex App
+  Server without starting a model turn.
 - **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora
   with local sensor history plus optional Auto-Powersaver modes and diagnostics.
 - **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager with
