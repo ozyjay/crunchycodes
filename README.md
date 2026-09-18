@@ -50,6 +50,12 @@ model artefacts:
   ordinary editor keys are held while dictation is active.
 - **Grab**, a GNOME Wayland screenshot and GIF capture tool with clipboard,
   editing, and optional local-save workflows.
+- **FollowScript**, a native iPhone speech-following teleprompter with bounded
+  local alignment, editable and imported scripts, and locally stored audio and
+  video takes grouped in a presentation library.
+- **CameraShotPicker**, a local-first macOS SwiftUI app for browsing camera RAW
+  files, ranking likely sharp images, refining a selection, and copying chosen
+  originals to an export folder.
 - **SpeechShift**, a replay-first speech-transformation demonstration with an
   opt-in, memory-only microphone path and local DSP baseline.
 - **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
@@ -69,6 +75,9 @@ model artefacts:
   rate-limit identities, shows a rolling local token pace, and keeps session
   content on the user's machine; optional live account reads use Codex App
   Server without starting a model turn.
+- **Codex Local Meter App**, a native macOS menu bar companion that separates
+  reported rate limits from fixed-window local activity estimates and keeps
+  live account reads optional.
 - **System Usage Monitor**, a GNOME extension for Framework Desktop and Fedora
   with local sensor history plus optional Auto-Powersaver modes and diagnostics.
 - **HuggingFacePull**, a local desktop, web, and CLI model snapshot manager with
