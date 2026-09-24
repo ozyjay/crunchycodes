@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore real next-token probabilities from a small open language model, one generation step at a time." />
+    <link rel="canonical" href="https://crunchycodes.net/token-trail/" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.mjs"></script>
+    <title>Token Trail | Crunchy Codes</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Crunchy Codes home">
+        <span class="brand-mark" aria-hidden="true">cc</span>
+        <span>Crunchy Codes</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/#projects">Projects</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../support.html">Support</a>
+      </nav>
+    </header>
+
+    <main class="trail-main">
+      <section class="trail-intro">
+        <p class="eyebrow">An interactive AI teaching demo</p>
+        <h1>Follow the next token.</h1>
+        <p>
+          A language model writes one token at a time. At each step, it assigns
+          probabilities to possible next tokens. Try a short prompt, then walk
+          through the model's actual choices and alternatives.
+        </p>
+        <div class="trail-links">
+          <span class="model-chip">Qwen2.5 0.5B · open-weight model</span>
+          <a href="https://github.com/ozyjay/token-trail-backend">How this works</a>
+        </div>
+      </section>
+
+      <div class="trail-grid">
+        <section class="trail-panel input-panel" aria-labelledby="try-heading">
+          <div class="panel-heading">
+            <span class="panel-index">01</span>
+            <div>
+              <p class="eyebrow">Start a trace</p>
+              <h2 id="try-heading">Give the model a beginning.</h2>
+            </div>
+          </div>
+
+          <form id="trace-form">
+            <label for="prompt">Prompt</label>
+            <textarea id="prompt" name="prompt" rows="4" maxlength="1000" required spellcheck="true">The moon is</textarea>
+            <p class="field-note">Keep it short. Your words are sent to the hosted model when you select Generate.</p>
+
+            <div class="example-row" aria-label="Example prompts">
+              <span>Try:</span>
+              <button type="button" class="example" data-prompt="The cat sat on the">The cat sat on the</button>
+              <button type="button" class="example" data-prompt="In the library, a robot">In the library, a robot</button>
+            </div>
+
+            <div class="setting-grid">
+              <div>
+                <label for="max-tokens">Generate up to</label>
+                <select id="max-tokens" name="max_tokens">
+                  <option value="8">8 tokens</option>
+                  <option value="16" selected>16 tokens</option>
+                  <option value="24">24 tokens</option>
+                  <option value="32">32 tokens</option>
+                </select>
+              </div>
+              <div>
+                <label for="top-k">Show alternatives</label>
+                <select id="top-k" name="top_k">
+                  <option value="3">3 per step</option>
+                  <option value="5" selected>5 per step</option>
+                  <option value="10">10 per step</option>
+                </select>
+              </div>
+            </div>
+
+            <details class="advanced-settings">
+              <summary>Sampling controls</summary>
+              <p class="field-note">At temperature 0 the model picks the most likely token. Higher temperatures make other choices possible. The bars always show the model's original probabilities.</p>
+              <div class="setting-grid">
+                <div>
+                  <label for="temperature">Temperature</label>
+                  <select id="temperature" name="temperature">
+                    <option value="0" selected>0 · most likely</option>
+                    <option value="0.7">0.7 · varied</option>
+                    <option value="1">1 · more varied</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="top-p">Top-p</label>
+                  <select id="top-p" name="top_p">
+                    <option value="1" selected>1 · no filter</option>
+                    <option value="0.9">0.9</option>
+                    <option value="0.7">0.7</option>
+                  </select>
+                </div>
+              </div>
+            </details>
+
+            <div class="form-actions">
+              <button class="button primary" id="generate" type="submit">Generate a trace</button>
+              <button class="button secondary" id="cancel" type="button" hidden>Cancel</button>
+            </div>
+          </form>
+          <p id="service-status" class="service-status" role="status" aria-live="polite">Checking the model…</p>
+        </section>
+
+        <section class="trail-panel trace-panel" aria-labelledby="trace-heading">
+          <div class="panel-heading">
+            <span class="panel-index">02</span>
+            <div>
+              <p class="eyebrow">Explore the response</p>
+              <h2 id="trace-heading">One decision at a time.</h2>
+            </div>
+          </div>
+          <div id="empty-state" class="empty-state">
+            <span class="empty-orbit" aria-hidden="true">01 → 02 → 03</span>
+            <p>Your token trail will appear here. Start with a prompt to see what the model considered.</p>
+          </div>
+          <div id="trace-result" hidden>
+            <p class="result-label">Prompt tokens</p>
+            <div id="prompt-tokens" class="token-list" aria-label="Prompt tokens"></div>
+            <p class="result-label">Generated so far</p>
+            <p id="generated-text" class="generated-text" aria-live="polite"></p>
+            <div class="step-controls">
+              <button id="previous-step" class="step-button" type="button" aria-label="Previous token">← Previous</button>
+              <span id="step-count" aria-live="polite"></span>
+              <button id="next-step" class="step-button" type="button" aria-label="Next token">Next →</button>
+            </div>
+            <div class="step-summary">
+              <div>
+                <span class="result-label">Selected token</span>
+                <strong id="selected-token"></strong>
+              </div>
+              <div>
+                <span class="result-label">Its probability</span>
+                <strong id="selected-probability"></strong>
+              </div>
+              <span class="probability-track selected-track" aria-hidden="true"><span id="selected-fill" class="probability-fill"></span></span>
+            </div>
+            <p class="result-label alternatives-title">Other likely next tokens</p>
+            <ol id="alternatives" class="alternatives"></ol>
+            <p id="step-timing" class="timing-note"></p>
+          </div>
+        </section>
+      </div>
+
+      <section class="trail-explainer" aria-label="How to read this trail">
+        <div>
+          <span class="panel-index">?</span>
+          <h2>What do these numbers mean?</h2>
+        </div>
+        <p>
+          Each bar is a probability from the model's next-token distribution at
+          that exact step. A token can be a word, part of a word, a space, or
+          punctuation. These numbers are not the model's thoughts or confidence
+          that a statement is true. Sampling can choose a token outside the
+          alternatives shown here.
+        </p>
+        <p>
+          The model runs on a public Hugging Face Space. The app does not save
+          prompts or responses, but your prompt is sent to that service to make
+          a trace. See the <a href="../privacy.html">privacy page</a> for details.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Crunchy Codes</span>
+      <div>
+        <a href="https://github.com/ozyjay/TokenTrail">TokenTrail project</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="/">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>

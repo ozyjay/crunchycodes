@@ -66,8 +66,8 @@ model artefacts:
 - **Can You Spot the Scam?**, a local-first cybersecurity awareness game.
 - **Humans in the Loop**, a crowd-controlled demonstration of AI oversight.
 - **TokenTrail**, a token-level generation and probability teaching demo with
-  ModelDeck native capability discovery, explicit cancellation, and runtime
-  refresh controls.
+  a public hosted next-token trace page, plus the separate local project
+  with ModelDeck capability discovery and cancellation controls.
 - **Repartee**, a local interactive voice-conversation research MVP.
 - **Bouncer**, an Android live wallpaper maker project with configurable physics,
   two-stage calibration, frame-timing telemetry, and adaptive performance controls.
