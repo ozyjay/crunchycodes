@@ -25,7 +25,8 @@ model artefacts:
   versioned Routing Profiles, manifest-approved Qwen3.5 GGUF/Vulkan candidates,
   reviewed Qwen3.8 runtime paths, tool-calling Qwen3.5 and Gemma 4 routes, Live
   worker controls, loopback OpenCode configuration, guarded state transfer, and
-  read-only demo preflight.
+  read-only demo preflight, plus an offline, hash-checked SceneChat corpus review
+  editor that saves approvals as local JSON.
 - **Codex Router**, a local VS Code companion that recommends a current Codex
   model and reasoning effort through a deterministic policy or opt-in ModelDeck
   classifier before explicitly approved Codex App Server turns, with bounded
@@ -56,6 +57,13 @@ model artefacts:
 - **CameraShotPicker**, a local-first macOS SwiftUI app for browsing camera RAW
   files, ranking likely sharp images, refining a selection, and copying chosen
   originals to an export folder.
+- **SafeSet**, an offline desktop and command-line tool for protecting and
+  restoring Excel and DOCX working copies locally, with relational spreadsheet
+  identifiers, encrypted private bundles, explicit validation, an operational
+  macOS app, and a documented Windows preview.
+- **Overdraw**, a Windows-first C# proof of concept for drawing with a pen over
+  a click-through full-screen layer while mouse and keyboard interaction reaches
+  the underlying apps.
 - **SpeechShift**, a replay-first speech-transformation demonstration with an
   opt-in, memory-only microphone path and local DSP baseline.
 - **DiffusionGemma Q4 for ModelDeck**, a published self-contained GPTQ Q4 g32
@@ -64,6 +72,8 @@ model artefacts:
   and an optional ModelDeck-backed DiffusionGemma mode using native capability
   discovery and an explicit submit, poll, and cancel job lifecycle.
 - **Can You Spot the Scam?**, a local-first cybersecurity awareness game.
+- **Red Dust Rover**, an interactive classroom simulator that compares animated
+  breadth-first search and A* across a randomly generated Mars terrain.
 - **Humans in the Loop**, a crowd-controlled demonstration of AI oversight.
 - **TokenTrail**, a token-level generation and probability teaching demo with
   a public hosted next-token trace page, plus the separate local project
