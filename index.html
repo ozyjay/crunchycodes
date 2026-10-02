@@ -108,6 +108,10 @@
         </div>
         <ol class="activity-list">
           <li>
+            <time datetime="2026-09-26">Sep 26</time>
+            <span>SafeSet field-scoped edits, result-workbook restoration, bounded Excel regions, and explicit DOCX content review</span>
+          </li>
+          <li>
             <time datetime="2026-09-25">Sep 25</time>
             <span>SafeSet DOCX protection, restoration validation, and Windows private-storage foundations</span>
           </li>
@@ -122,10 +126,6 @@
           <li>
             <time datetime="2026-09-23">Sep 23</time>
             <span>ModelDeck offline SceneChat corpus review with fixed metadata and local JSON saves</span>
-          </li>
-          <li>
-            <time datetime="2026-09-22">Sep 22</time>
-            <span>Red Dust Rover classroom search-algorithm simulator with animated BFS and A*</span>
           </li>
         </ol>
       </section>
@@ -468,19 +468,23 @@
             <p class="status">Active build / offline document protection</p>
             <h3>SafeSet</h3>
             <p>
-              An offline desktop and command-line tool for creating protected
-              Excel and Word working copies, then restoring approved results
-              locally. Its relational spreadsheet workflow preserves shared
-              entity references across sheets, while encrypted private bundles,
-              explicit validation, and restricted diagnostics keep the sensitive
-              reconstruction material separate. The macOS app is operational;
-              the Windows workflow remains a documented preview.
+              An offline macOS desktop and command-line tool for creating
+              protected Excel and Word working copies, then restoring approved
+              edits locally. Workbook permissions are selected per field. In
+              editable mode, reviewed changes are applied to a new copy of the
+              original while preserving unrelated sheets, formatting, charts and
+              formulas; a separate result-workbook path validates entity and
+              record joins before restoring selected source fields. Confirmed
+              regions support complex spreadsheets, while document review
+              explicitly covers figures and selected paragraph removal. Encrypted
+              private bundles keep reconstruction material separate; the Windows
+              workflow remains a documented preview.
             </p>
             <div class="meta-list" aria-label="SafeSet highlights">
-              <span>Python</span>
-              <span>Excel and DOCX</span>
-              <span>Encrypted bundles</span>
-              <span>Offline workflow</span>
+              <span>Field-level permissions</span>
+              <span>Bounded Excel regions</span>
+              <span>DOCX content review</span>
+              <span>Offline restoration</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/SafeSet">GitHub</a>

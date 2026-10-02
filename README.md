@@ -57,10 +57,11 @@ model artefacts:
 - **CameraShotPicker**, a local-first macOS SwiftUI app for browsing camera RAW
   files, ranking likely sharp images, refining a selection, and copying chosen
   originals to an export folder.
-- **SafeSet**, an offline desktop and command-line tool for protecting and
-  restoring Excel and DOCX working copies locally, with relational spreadsheet
-  identifiers, encrypted private bundles, explicit validation, an operational
-  macOS app, and a documented Windows preview.
+- **SafeSet**, an offline macOS desktop and command-line tool for protecting and
+  restoring Excel and DOCX working copies locally, with field-level editing
+  permissions, approval-gated editable and result-workbook restoration, bounded
+  spreadsheet regions, explicit figure and paragraph review, encrypted private
+  bundles, and a documented Windows preview.
 - **Overdraw**, a Windows-first C# proof of concept for drawing with a pen over
   a click-through full-screen layer while mouse and keyboard interaction reaches
   the underlying apps.
