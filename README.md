@@ -21,6 +21,9 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 The homepage currently features recent public Crunchy Codes repositories and
 model artefacts:
 
+- **Noteboard**, a local-first Electron research prototype for branching inquiry,
+  editable Markdown synthesis with source links, SQLite Board storage, local
+  Ollama, and optional ChatGPT plan usage without an API-key fallback.
 - **ModelDeck**, a local runtime manager and stable capability gateway with
   versioned Routing Profiles, manifest-approved Qwen3.5 GGUF/Vulkan candidates,
   reviewed Qwen3.8 runtime paths, tool-calling Qwen3.5 and Gemma 4 routes, Live
@@ -57,12 +60,15 @@ model artefacts:
 - **CameraShotPicker**, a local-first macOS SwiftUI app for browsing camera RAW
   files, ranking likely sharp images, refining a selection, and copying chosen
   originals to an export folder.
+- **FocusForge**, a native Apple silicon focus-stacking prototype with alignment
+  checks, inspectable source and ambiguity maps, saveable projects, and profiled
+  TIFF or PNG export through a deterministic offline CPU pipeline.
 - **SafeSet**, an offline macOS desktop and command-line tool for protecting and
   restoring Excel and DOCX working copies locally, with field-level editing
   permissions, approval-gated editable and result-workbook restoration, bounded
   spreadsheet regions, separately approved static analysis worksheets that retain
   pseudonymous IDs, explicit figure and paragraph review, encrypted private bundles,
-  and a documented Windows preview.
+  value-free desktop diagnostics, and a documented Windows preview.
 - **Overdraw**, a Windows-first C# proof of concept for drawing with a pen over
   a click-through full-screen layer while mouse and keyboard interaction reaches
   the underlying apps.
