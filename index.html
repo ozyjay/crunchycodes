@@ -108,6 +108,14 @@
         </div>
         <ol class="activity-list">
           <li>
+            <time datetime="2026-10-18">Oct 18</time>
+            <span>Noteboard response profiles, provenance-aware web research and bounded document inputs</span>
+          </li>
+          <li>
+            <time datetime="2026-10-16">Oct 16</time>
+            <span>SafeSet local review and redaction for long-form workbook responses with identifier checks</span>
+          </li>
+          <li>
             <time datetime="2026-10-16">Oct 16</time>
             <span>SafeSet value-free desktop diagnostics with fixed operation and error codes</span>
           </li>
@@ -118,14 +126,6 @@
           <li>
             <time datetime="2026-10-11">Oct 11</time>
             <span>FocusForge native focus stacking with alignment checks, source maps, and profiled export</span>
-          </li>
-          <li>
-            <time datetime="2026-10-05">Oct 5</time>
-            <span>SafeSet approval-gated analysis worksheets appended as bounded static tables with pseudonymous IDs retained</span>
-          </li>
-          <li>
-            <time datetime="2026-09-26">Sep 26</time>
-            <span>SafeSet field-scoped edits, result-workbook restoration, bounded Excel regions, and explicit DOCX content review</span>
           </li>
         </ol>
       </section>
@@ -199,15 +199,18 @@
               editable Markdown with links back to their sources. The desktop
               app stores Boards in SQLite and supports a synthetic demo, local
               Ollama, or eligible ChatGPT plan usage without an API-key fallback.
-              Account credentials are kept separately in the operating system
-              credential store, while explicit context budgets prevent silent
-              history truncation.
+              Board-level response profiles shape new Notes. ChatGPT requests can
+              opt into web search with recorded citations and attach bounded
+              documents while retaining their provenance in Board records and
+              exports. On macOS, plan credentials use Touch ID or password-protected
+              Keychain storage; bounded local diagnostics exclude conversation,
+              attachment, account, credential, URL and raw-error content.
             </p>
             <div class="meta-list" aria-label="Noteboard highlights">
               <span>Electron</span>
               <span>SQLite</span>
               <span>Branching inquiry</span>
-              <span>Editable synthesis</span>
+              <span>Research provenance</span>
             </div>
             <div class="card-links">
               <a href="https://github.com/ozyjay/Noteboard">GitHub</a>
@@ -527,16 +530,19 @@
               while returned formulas, formatting and drawings are excluded. A
               separate result-workbook path validates entity and record joins
               before restoring selected source fields. Confirmed regions support
-              complex spreadsheets, while document review explicitly covers
-              figures and selected paragraph removal. Encrypted private bundles
-              keep reconstruction material separate. Desktop diagnostics record
-              only allowlisted operations and fixed outcomes, without paths,
-              values, request IDs or exception text; the Windows workflow remains
-              a documented preview.
+              complex spreadsheets. Long-form spreadsheet responses require
+              explicit local review and redaction, with exact issue highlights
+              and worksheet identifier checks; separately reviewed direct
+              identifiers can be replaced with random reference-only codes.
+              Document review explicitly covers figures and selected paragraph
+              removal. Encrypted private bundles keep reconstruction material
+              separate. Desktop diagnostics record only allowlisted operations
+              and fixed outcomes, without paths, values, request IDs or exception
+              text; the Windows workflow remains a documented preview.
             </p>
             <div class="meta-list" aria-label="SafeSet highlights">
               <span>Field-level permissions</span>
-              <span>Bounded Excel regions</span>
+              <span>Narrative text review</span>
               <span>DOCX content review</span>
               <span>Value-free diagnostics</span>
             </div>

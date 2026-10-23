@@ -28,7 +28,7 @@
     <main class="content-page">
       <p class="eyebrow">Privacy</p>
       <h1>Privacy policy.</h1>
-      <p>Last updated: September 24, 2026</p>
+      <p>Last updated: 23 October 2026</p>
 
       <section>
         <h2>Overview</h2>
@@ -76,6 +76,29 @@
           application telemetry. Hugging Face and network infrastructure may
           handle request metadata under their own policies. Do not enter
           sensitive information in the demo.
+        </p>
+      </section>
+
+      <section>
+        <h2>Noteboard</h2>
+        <p>
+          Noteboard stores Boards and settings locally. Its synthetic demo and
+          loopback-only Ollama mode do not need a hosted inference service. When
+          you choose ChatGPT plan usage, the complete request context and any
+          attached files are sent to OpenAI with storage disabled for the
+          request. Enabling web search also permits the hosted search tool and
+          records returned citations and source URLs in the Board. OpenAI and
+          network infrastructure may process request data under the policies
+          applying to your account and service.
+        </p>
+        <p>
+          Account credentials stay separate from Boards and exports. On macOS,
+          a signed build protects them with Touch ID or the system password via
+          the data protection Keychain; other supported platforms use secure
+          operating-system storage and refuse insecure fallbacks. Local rotating
+          diagnostic logs are never uploaded automatically and exclude prompts,
+          responses, attached files, credentials, account identities, raw errors
+          and URLs.
         </p>
       </section>
 

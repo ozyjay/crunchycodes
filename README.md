@@ -10,7 +10,8 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 - `support.html` explains how to report bugs, request features, and share
   security concerns for Crunchy Codes projects.
 - `privacy.html` describes the default privacy posture for Crunchy Codes
-  projects and includes Codex Local Meter-specific notes.
+  projects and includes project-specific notes for hosted or account-connected
+  tools.
 - `styles.css` contains the full visual treatment. There is no build step,
   JavaScript bundle, or framework.
 - `404.html`, `robots.txt`, `sitemap.xml`, and `CNAME` support GitHub Pages and
@@ -22,8 +23,11 @@ The homepage currently features recent public Crunchy Codes repositories and
 model artefacts:
 
 - **Noteboard**, a local-first Electron research prototype for branching inquiry,
-  editable Markdown synthesis with source links, SQLite Board storage, local
-  Ollama, and optional ChatGPT plan usage without an API-key fallback.
+  Board-level response profiles, editable Markdown synthesis with source links,
+  SQLite Board storage, local Ollama, and optional ChatGPT plan usage with
+  provenance-aware web research and bounded document inputs. macOS credentials
+  use Touch ID or password-protected Keychain storage; local diagnostics exclude
+  conversation, attachment and account content.
 - **ModelDeck**, a local runtime manager and stable capability gateway with
   versioned Routing Profiles, manifest-approved Qwen3.5 GGUF/Vulkan candidates,
   reviewed Qwen3.8 runtime paths, tool-calling Qwen3.5 and Gemma 4 routes, Live
@@ -67,8 +71,10 @@ model artefacts:
   restoring Excel and DOCX working copies locally, with field-level editing
   permissions, approval-gated editable and result-workbook restoration, bounded
   spreadsheet regions, separately approved static analysis worksheets that retain
-  pseudonymous IDs, explicit figure and paragraph review, encrypted private bundles,
-  value-free desktop diagnostics, and a documented Windows preview.
+  pseudonymous IDs, explicit local review and redaction for long-form spreadsheet
+  responses, bounded coding of additional identifiers, explicit figure and paragraph
+  review, encrypted private bundles, value-free desktop diagnostics, and a documented
+  Windows preview.
 - **Overdraw**, a Windows-first C# proof of concept for drawing with a pen over
   a click-through full-screen layer while mouse and keyboard interaction reaches
   the underlying apps.
