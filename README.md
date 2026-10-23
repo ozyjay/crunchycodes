@@ -12,7 +12,10 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 - `privacy.html` describes the default privacy posture for Crunchy Codes
   projects and includes project-specific notes for hosted or account-connected
   tools.
-- `styles.css` contains the full visual treatment. There is no build step,
+- `memoryium/` hosts Matching Pairs and Glance, the two Memoryium browser games.
+  The homepage links to both activities. See `memoryium/README.md` for source
+  and update instructions.
+- `styles.css` contains the main site's visual treatment. There is no build step,
   JavaScript bundle, or framework.
 - `404.html`, `robots.txt`, `sitemap.xml`, and `CNAME` support GitHub Pages and
   the custom domain.
@@ -22,6 +25,8 @@ Crunchy Codes projects, notes, experiments, and developer tools.
 The homepage currently features recent public Crunchy Codes repositories and
 model artefacts:
 
+- **Memoryium**, relaxed matching and visual attention games hosted at
+  `/memoryium/` and `/memoryium/glance.html`, with untimed answers and no account.
 - **Noteboard**, a local-first Electron research prototype for branching inquiry,
   Board-level response profiles, editable Markdown synthesis with source links,
   SQLite Board storage, local Ollama, and optional ChatGPT plan usage with
@@ -134,6 +139,7 @@ directly. Before publishing, check:
 
 ```sh
 git diff --check
+node --test tests/*.test.mjs
 ```
 
 Then open `index.html`, `support.html`, `privacy.html`, and `404.html` locally
