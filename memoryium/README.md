@@ -25,3 +25,12 @@ python -m http.server 8000 --bind 127.0.0.1
 Open http://127.0.0.1:8000/memoryium/. Both activities keep game state in the
 open page only. Glance is experimental and is not a cognitive assessment or
 validated clinical intervention.
+
+## Mobile portrait layouts
+
+Phone layouts use compact headers, four-column matching boards, and an
+expandable Glance picture guide. During a Glance round, the introduction and
+game navigation give way to the picture and answers. Controls remain at least
+44px high. The source project's portrait tests cover 320 × 568, 360 × 640,
+375 × 812, and 390 × 844, including all matching-board sizes and both types of
+Glance answer.
