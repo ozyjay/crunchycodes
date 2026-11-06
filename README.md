@@ -100,6 +100,10 @@ model artefacts:
 - **Repartee**, a local interactive voice-conversation research MVP.
 - **Bouncer**, an Android live wallpaper maker project with configurable physics,
   two-stage calibration, frame-timing telemetry, and adaptive performance controls.
+- **AbletonOps**, an early-stage Ableton Move and Live knowledge and development
+  workspace with source-checked hardware guides, groove and bass-pattern studies,
+  and a staged roadmap for deterministic MIDI, Live Extensions, Max for Live and
+  controller experiments; its SDK areas remain reserved for future work.
 - **Codex Local Meter**, a local-first VS Code extension that preserves reported
   rate-limit identities, shows a rolling local token pace, and keeps session
   content on the user's machine; optional live account reads use Codex App
